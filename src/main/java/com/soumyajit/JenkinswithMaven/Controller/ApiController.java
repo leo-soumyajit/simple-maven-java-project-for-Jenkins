@@ -18,4 +18,9 @@ public class ApiController {
     public String hello(@PathVariable(required = false) Optional<String> name) {
         return "Hello, " + name.orElse("Super Coder") + "! Welcome to the Maven Project.";
     }
+
+    @GetMapping("/status")
+    public String status() {
+        return "Application is running!";
+    }
 }

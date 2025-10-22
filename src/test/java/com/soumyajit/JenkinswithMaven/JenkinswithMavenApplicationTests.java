@@ -31,4 +31,10 @@ class JenkinswithMavenApplicationTests {
 		assertEquals("Hello, Super Coder! Welcome to the Maven Project.", response);
 	}
 
+	@Test
+	void testStatusEndpoint() {
+		String response = controller.status();
+		assertEquals("Application is running!", response);
+	}
+
 }
