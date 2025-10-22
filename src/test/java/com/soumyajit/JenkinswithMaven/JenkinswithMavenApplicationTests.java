@@ -34,7 +34,7 @@ class JenkinswithMavenApplicationTests {
 	@Test
 	void testStatusEndpoint() {
 		String response = controller.status();
-		assertEquals("Application is running!", response);
+		assertEquals("Application is running!...", response);
 	}
 
 }

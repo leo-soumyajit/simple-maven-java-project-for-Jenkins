@@ -21,6 +21,6 @@ public class ApiController {
 
     @GetMapping("/status")
     public String status() {
-        return "Application is running!";
+        return "Application is running!...";
     }
 }
